@@ -269,7 +269,7 @@ article {
 }
 
 label {
-  display: block;
+  /* display: block; */
   font-size: 16px;
   margin-bottom: 8px;
   margin-left: 10px;
@@ -305,7 +305,7 @@ select:focus {
 
 
 .loginform{
-  height: 350px;
+  height: 550px;
   width: 300px;
   display: flex;
   justify-content: center;
@@ -325,7 +325,7 @@ select:focus {
 
 
 .loginform:hover{
-  height: 350px;
+  height: 550px;
   width: 300px;
   display: flex;
   justify-content: center;

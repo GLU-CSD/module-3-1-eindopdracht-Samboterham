@@ -18,9 +18,9 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="fflogo.png">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -32,13 +32,13 @@
       <nav class="topnav">
 
 
-        <a href="home.html">
+        <a href="index.html">
 
           <img src="assets1/img/logo.png" alt="Account" class="logoicon">
         </a>
         <input type="text" placeholder="Zoeken">
 
-        <div style="gap: 30px; display: flex; align-items: center; margin-right: 120px; font-size: 17px;">
+        <div id="toptext" style="gap: 30px; display: flex; align-items: center; margin-right: 120px; font-size: 17px;">
           <a href="login.html" style="color: rgb(0, 95, 167);">Log in</a>
           <a style="font-size: 25px;">|</a>
 
@@ -79,9 +79,9 @@
               <a href="https://store.playstation.com/nl-nl/pages/latest?gad_source=1&gclid=CjwKCAiAqrG9BhAVEiwAaPu5zi6z8uldD4hmVFeQR7NQJokKkieE-G6p8lSTC8bR6iFLYHNIzZETjRoCha4QAvD_BwE&gclsrc=aw.ds"
                 style="color: blue; font-size: small;">PlayStation 5</a><br>
               <span style="	font-size: smaller;"><i>New</i></span><br>
-              <span>&euro;<i>49,99,-</i></span><br>
-              <span>&euro;<i><s>59,99,-</s></i></span><br>
-              <button class="addtocart">+ Add to card</button>
+              <span id="condtion" >&euro;<i>49,99,-</i></span><br>
+              <span id="prijs">&euro;<i><s>59,99,-</s></i></span><br>
+              <button id="addtocart" class="addtocart">+ Add to card</button>
             </div>
           </div>
 
@@ -232,11 +232,11 @@
             <img src="assets1/img/ffx.png" alt="">
             <h4>Final Fantasy X</h4>
             <div>
-              <a href="https://store.playstation.com/nl-nl/pages/latest?gad_source=1&gclid=CjwKCAiAqrG9BhAVEiwAaPu5zi6z8uldD4hmVFeQR7NQJokKkieE-G6p8lSTC8bR6iFLYHNIzZETjRoCha4QAvD_BwE&gclsrc=aw.ds"
+              <a id="Link" href="https://store.playstation.com/nl-nl/pages/latest?gad_source=1&gclid=CjwKCAiAqrG9BhAVEiwAaPu5zi6z8uldD4hmVFeQR7NQJokKkieE-G6p8lSTC8bR6iFLYHNIzZETjRoCha4QAvD_BwE&gclsrc=aw.ds"
                 style="color: blue; font-size: small;">PlayStation 2</a><br>
-              <span style="	font-size: smaller;"><i>Used</i></span><br>
-              <span>&euro;<i>44,99,-</i></span><br>
-              <button class="addtocart">+ Add to card</button>
+              <span id="condtion" style="	font-size: smaller;"><i>Used</i></span><br>
+              <span id="prijs" >&euro;<i>44,99,-</i></span><br>
+              <button id="addtocart" class="addtocart">+ Add to card</button>
             </div>
           </div>
           <div class="productcard" data-console="Ps1" style="width: 25%;">

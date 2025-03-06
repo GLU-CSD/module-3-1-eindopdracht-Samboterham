@@ -17,4 +17,7 @@ document.querySelectorAll(".addtocart").forEach(button => {
 });
 
 
+
+ 
+
    

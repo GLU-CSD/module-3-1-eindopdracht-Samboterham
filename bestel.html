@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Fantasy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets1/css/bestel.css">
+
+    <meta name="description" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="">
+
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="fflogo.png">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+
+            <nav class="topnav">
+
+
+                <a href="index.html">
+
+                    <img src="assets1/img/logo.png" alt="Account" class="logoicon">
+                </a>
+                <input type="text" placeholder="Zoeken">
+
+                <div style="gap: 30px; display: flex; align-items: center; margin-right: 120px; font-size: 17px;">
+                    <a href="login.html" style="color: rgb(0, 95, 167);">Log in</a>
+                    <a style="font-size: 25px;">|</a>
+
+                    </a>
+                    <a href="shoppingcart.html" style="color: rgb(0, 95, 167);">Shoppingcart</a>
+                    <a style="font-size: 25px; ">|</a>
+                    </a>
+
+                    <div style="color: rgb(0, 95, 167);">Language:</div>
+
+                    <div class="filter-console">
+                        <select class="taalbalk" style="color: rgb(0, 95, 167);" id="category" name="category">
+                            <option value="EN" style="color: rgb(0, 95, 167);">English</option>
+                            <option value="NL" style="color: rgb(0, 95, 167);">Dutch</option>
+                            <option value="SP" style="color: rgb(0, 95, 167);">Spanish</option>
+                        </select>
+                        </a>
+                    </div>
+
+
+
+            </nav>
+    </header>
+
+    <main>
+
+        <div id="backgroundform">
+            <form action="doelbestand.php" method="post" style="margin-left: 120px;">
+
+                <h1 style="margin-left: 175px;">ORDER FORM</h1>
+
+
+
+                Type of order: <input style="margin-top: 15px;" type="radio" name="type" value="part" id="part">
+                <label for="part">
+                    Private.</label>
+                <input type="radio" name="type" value="zakelijk" id="zakelijk">
+                <label for="zakelijk">Buisness</label><br>
+
+                Gender: <input style="margin-top: 15px;" type="radio" name="aanhef" value="dhr" id="dhr">
+                <label for="dhr">Ms.</label>
+                <input type="radio" name="aanhef" value="mevr" id="mevr">
+                <label for="mevr">Mis.</label><br>
+
+                Name: <input style="margin-top: 15px;" id="vnaam" type="text" name="vnaam" placeholder="Firstname">
+
+                <input style="margin-top: 15px;" id="tussenv" type="text" style="width: 30px;" name="
+            Infix" placeholder="Middlename">
+
+                <input style="margin-top: 15px;" id="anaam" type="text" name="vnaam" placeholder="Secondname"><br>
+
+                Zipcode <input style="margin-top: 15px;" id="postc" type="text" name="postcode"
+                    placeholder="1234AB"><br>
+
+                Adres: <input style="margin-top: 15px;" id="hnummer" type="text" style="width: 60px;" name="vnaam"
+                    placeholder="Nr.">
+                <input style="margin-top: 15px;" id="toevg" type="text" style="width: 60px;" name="vnaam"
+                    placeholder="Ext."><br>
+
+
+                Country: <input style="margin-top: 15px;" id="country" type="text" name="country" size="20"
+                    list="countries" placeholder="Country" />
+                <datalist id="countries">
+                    <option value="Netherlands">
+                    <option value="Belguim">
+
+                </datalist><br>
+
+                Orderadres: <input style="margin-top: 15px;" type="radio" name="aderes" value="bovenstaande"
+                    id="bovenstaande">
+                <label for="bovenstaande">Deliver to the above address</label>
+                <input type="radio" name="aderes" value="ander" id="ander">
+                <label for="ander">Order on diffrent adres</label><br>
+
+                E-mailadres <input style="margin-top: 15px;" id="email" type="email" name="mail"
+                    placeholder="Email"><br>
+                Phonenumber <input style="margin-top: 15px;" id="telefoonnummer" type="text" name="telefoonnummer"
+                    placeholder="Phonenumber" min="9" max="10"><br>
+                Birthdate <input style="margin-top: 15px;" id="age" type="date" min="16" max="100"><br>
+
+                Invoice shipping method <input style="margin-top: 15px;" type="radio" name="Verzendwijze" value="email"
+                    id="email">
+                <label for="email">
+                    Invoice by email</label>
+                <input type="radio" name="Verzendwijze" value="geprint" id="geprint">
+                <label for="geprint">Invoice printed with order</label><br>
+
+                Newsletter: <input style="margin-top: 15px;" type="radio" name="Cado" value="cado" id="cado">
+                <label for="cado">Yes, I would like to receive the Newsletter with a $5 gift card</label><br>
+
+                Package color <input style="margin-top: 15px;" id="color" type="color" style="width: 150px;"><br>
+
+
+                Password <input style="margin-top: 15px;" id="ww" type="password" name="ww" placeholder="Password"
+                    min="6" max="24"><br>
+                <div style="color: gray; font-size: 12px;">6 characters minimal</div>
+                Confirm password <input style="margin-top: 15px;" id="ww" type="password" name="ww"
+                    placeholder="Confirm password" min="6" max="24"><br>
+
+
+
+
+
+                <input style="margin-top: 50px;" id="submit" type="submit" value="Contuine"><br>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class=websitevansam>Website van sambam&copy;</div>
+
+        </div>
+    </footer>
+    <!-- Add your site or application content here -->
+
+    <script src="assets1/js/app.js"></script>
+
+</body>
+
+</html>

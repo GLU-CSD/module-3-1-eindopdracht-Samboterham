@@ -266,7 +266,7 @@ article {
 }
 
 label {
-  display: block;
+ 
   font-size: 16px;
   margin-bottom: 8px;
   margin-left: 10px;
@@ -300,53 +300,23 @@ select:focus {
   box-shadow: 0 1px 1px #383838;
 }
 
-.shoppingcart_1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #c1f4ff;
-  height: 520px;
+#submit{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 150px;
+    height: 50px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-color: #5ae1ff;
+}
+
+#backgroundform{
+  height: 750px;
   width: 800px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #c1f4ff;
 }
 
-.shoppingcarttext{
-  justify-content: center;
-}
 
-.shoppingcart h2{
-  display: flex;
-  justify-content: center;
-}
-
-#contuine{
-  height: 40px;
-  width: 160px;
-  border-radius: 10px;
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 13px;
- 
-  
-  
-}
-#empty{
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 18px;
-}
-
-#shoppingcarttext{
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 35px;
-}

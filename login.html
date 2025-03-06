@@ -18,10 +18,11 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
+
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
+  <link rel="apple-touch-icon" href="fflogo.png">
+  
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -32,7 +33,7 @@
       <nav class="topnav">
 
 
-        <a href="home.html">
+        <a href="index.html">
 
           <img src="assets1/img/logo.png" alt="Account" class="logoicon">
         </a>
@@ -68,11 +69,24 @@
       <div id="naambalk">
         <h1>LOGIN</h1>
 
-        <h4>USERNAME:</h4>
+        Gender: <br><input style="margin-top: 15px;" type="radio" name="aanhef" value="dhr" id="dhr">
+        <label for="dhr" style="font-size: 14px;">Mr.</label><br>
+        <input type="radio" style="margin-top: 10px;" name="aanhef" value="mevr" id="mevr">
+        <label for="mevr" style="font-size: 14px;">Mis.</label><br>
+
+        Age: <input style="margin-top: 15px;" type="date" min="16" max="100"><br>
+
+        
+        
+        <h4>FULL NAME:</h4>
         <input type="text" placeholder="Enter Username" name="uname" required id="naam_balk" autocomplete="off"><br>
+
+        <h4>Mail:</h4>
+        <input type="email" placeholder="Enter Password" name="uname" required id="naam_balk1" autocomplete="off"><br>
 
         <h4>PASSWORD:</h4>
         <input type="password" placeholder="Enter Password" name="uname" required id="naam_balk1" autocomplete="off"><br>
+
 
         <button id="login_button"> LOG IN </button>
       </div>
